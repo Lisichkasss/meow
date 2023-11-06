@@ -1,0 +1,49 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.app__form {
+  padding: 150px;
+}
+
+.input {
+  padding: 17px;
+  width: 365px;
+}
+
+.ver__buttons {
+  padding: 10px;
+}
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin: 10px 20px; /* сверху 10 справа 20 слева 20 снизу 10 */
+}
+.link__buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+button {
+  border-style: none;
+  padding: 15px;
+  color: #ffffff;
+}
+.but1 {
+  background-color:#04C35C;
+}
+.but2 {
+  background-color: #2D3748;
+}
+.ver__buttonss {
+  padding: 10px;
+  position: relative;
+  top: 180px;
+}
