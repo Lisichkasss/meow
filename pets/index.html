@@ -1,0 +1,229 @@
+<?php
+    // Подключение к БД
+    $connection = mysqli_connect("localhost", "root", "", "pets");
+
+    // Получение данных из таблицы
+    $query = "SELECT * FROM our_pets LIMIT 3;";
+    $result = mysqli_query($connection, $query);
+
+    
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Дорога домой</title>
+
+</head>
+<body style="overflow-x: hidden;">
+
+    <div class="header_fon"></div>
+<div class="wrapper">
+    <div class="header"> <!-- Шапка -->
+        <div class="container"> <!-- Контейнер, помогает сдвигать элементы -->
+            <div class="header-line"> <!-- Меню -->
+                <div class="header-logo"> <!-- Логотип -->
+                    <img src="./img/log1o 1.png" alt="">
+                </div>
+
+                <div class="nav"> <!-- Главная -->
+                <a class="nav-item" id="#top" href="/our_pets">НАШИ ПИТОМЦЫ</a>
+                <a class="nav-item" id="#top1" href="#top1">О НАС</a>
+                <a class="nav-item" id="#" href="/volunteering">ВОЛОНТЕРСТВО</a>
+                </div>
+
+                <div class="phone"> <!-- Телефон -->
+                    <div class="phone-holder"> <!-- Объединяем дивы, чтобы иконка и телефон были на одном уровне -->
+                        <div class="phone-img">
+                            <img src="./img/phone.png" alt="">
+                        </div>
+
+                         <div class="number"><a class="num" href="tel:+79145042365">+7(914)504-23-65</a></div>
+                    </div>
+                    <div class="phone-text">
+                        Позвоните сейчас
+                    </div>
+                </div>
+                    <div class="btn"> <!-- Кнопка помочь -->
+                        <div id="block1"  href="#zatemnenie" class="text_menu">
+                            
+                            <div id="zatemnenie">
+                             <div id="Menu">  <a href="#" class="close2">✖ </a>
+                                <p class="sub">Способы помощи</p>
+                                <p class="sup">Напишите нам на почту: <span>wayhome90@mail.ru</span>,<br> чтобы мы могли связаться с вами.</p>
+                                <br>
+                                <p class="sup"><span>Реквизиты для пожертвования</span> <br> 2202 4563 2545 8833 Надежда В.</p>
+                        </div>
+                        </div>
+                        
+                        <div id="block1">
+                            <a class="button" href="#zatemnenie">ПОМОЩЬ</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="header-down"> <!-- Нижний текст с заголовком -->
+            <div class="header-title">
+                ДОБРО ПОЖАЛОВАТЬ В
+                <div class="header-sub">
+                    НАШ ПРИЮТ
+                </div>
+                <div class="header-sup">
+                    WAY HOME
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards"> <!-- Карточки на главном экране три штуки -->
+        <div class="container">
+            <div class="cards-holder"> <!-- Объединяем все карточки -->
+                <div class="card"> <!-- Карточка на главном -->
+                    <div class="card-image">
+                        <img class="card-image" src="./img/card.png">
+                    </div>
+                    <div class="card-title">
+                        ПОДАРИТЕ ДОМ
+                    </div>
+                    <div class="card-desc"> <!-- Описание карточек информации -->
+                        <span>обретите себе верного друга <br>
+                        и компаньона</span>
+                    </div>
+                </div>
+                <div class="card"> <!-- Карточка на главном -->
+                    <div class="card-image">
+                        <img class="card-image" src="./img/card.png">
+                    </div>
+                    <div class="card-title">
+                        ОТКРОЙТЕ СВОЁ СЕРДЦЕ
+                    </div>
+                    <div class="card-desc"> <!-- Описание карточек информации -->
+                        <span>подарив ей любовь и заботу, <br>
+                        собака станет верным другом</span>
+                    </div>
+                </div>
+                <div class="card"> <!-- Карточка на главном -->
+                    <div class="card-image">
+                        <img class="card-image" src="./img/card.png">
+                    </div>
+                    <div class="card-title">
+                        ОБРЕТИТЕ СЧАСТЬЕ
+                    </div>
+                    <div class="card-desc"> <!-- Описание карточек информации -->
+                        <span>рядом с ними вам никогда не придется скучать</span>
+                    </div>
+                </div> 
+           </div>
+        </div>
+    </div>
+
+    <div class="onas">
+        <div class="container">
+            <div class="onas-holder">
+                <div class="onas-info">
+                    <div class="onas-title" id="top1">
+                        О <span>НАС</span>
+                    </div>
+                    <div class="onas-desc">
+                        Место содержания бездомных, потерянных или брошенных животных, преимущественно собак.
+                        Приюты являются одной из ключевых составляющих защиты животных и выполняют четыре основных функции:
+                        оперативная помощь и забота о животном, включая облегчение страданий посредством ветеринарной помощи 
+                        или эвтаназии; долгосрочная забота о животном, не нашедшем немедленно старого или нового хозяина.
+                    </div>
+
+                    <div class="onas-number">
+                      <div class="number-item">
+                        <span class="count" style="color: #CF6809;" data-count="731">0</span>
+                        <span>Спасено всего</span>
+                      </div>
+                      <div class="number-item">
+                        <span class="count" style="color: #CF6809;" data-count="521">0</span>
+                        <span>Нашли дом</span>
+                      </div>
+                      <div class="number-item">
+                        <span class="count" style="color: #CF6809;" data-count="210">0</span>
+                        <span>Ищут дом</span>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="onas-images">
+                    <img class="images-1" src="./img/1.png" alt="">
+                    <img class="images-2" src="./img/2.png" alt="">
+                    <img class="images-3" src="./img/3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pets-fon">
+        <div class="container" style="width: 1440px; margin-left: 50%; transform: translate(-50%); display: flex; flex-direction: column; align-items: center">
+            <div class="pets-text">НАЙТИ ДРУГА</div>
+            <div style=" display: flex; flex-direction: row; justify-content: space-evenly;">
+
+                 <?
+                // Цикл по всем записям в таблице
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        // Формирование HTML-кода для каждого животного
+                        echo '<div class="free_pets">';
+                        echo '<img lass="pets-image" src="' . $row["src"] . '" alt="' . $row["name"] . '"/>';
+                        echo '<p class="pets-name">' . $row["name"] . '</p>';
+                        echo '</div>';
+                    }
+
+                ?>
+            </div>
+            <button class="button-1"><a href="/our_pets">НАШИ ПИТОМЦЫ</a></button>
+        </div>
+    </div>
+    
+    <div class="health" style="display: flex; justify-content: center;"> <!-- информация о здоровье собак -->
+        <div style="width: 1125px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 47px 0;">
+            <img id="foto2" src="./img/health text.png" alt=""/>
+           
+        </div>
+    </div>
+    </div>
+</div>
+    <div class="iframe">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A54a223b3617ac4cd3d7a21388631fa61b1ad69baee8b258851561ca758edad29&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        <img src="img/map-house.jpg" alt="">
+    </div>
+    <div class="wrapper">
+    <section id="footer" style="color: #fff;">
+        <div style="display: flex; justify-content: space-around;">
+            <div class="coperight">
+                <p style="font-size: 16px; width: 290px;">Сайт является проектом команды волонтёров приюта в Москве</p>
+                <p style="font-size: 8px;">© WAY HOME | ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+            </div>
+            <div class="contact">
+                <p style="font-size: 16px; color: #CF6809;">КОНТАКТЫ</p>
+                <p>Телефон: +7(914)504-23-65</p>
+                <p>Почта: wayhome1@mail.ru</p>
+            </div>
+            <div class="inform">
+                <p style="font-size: 16px; color: #CF6809;">ИНФОРМАЦИЯ</p>
+                <p>Наши питомцы</p>
+                <p>О нас</p> 
+                <p>Волонтерство</p>           
+            </div>
+        </div>
+       
+    </section>
+</div>
+<script src="scroll.js"></script>
+</div>
+</body>
+</html>

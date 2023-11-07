@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+  font-style: normal;
+}
+.container {
+    margin: 0px 166px;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1108px;
+}
+
+.nav-item {
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 25px;
+    transition: color 0.3s linear;  /* Плавное изменение цвета */
+}
+
+  .nav-item:hover { /* псевдокласс,происходит изменение цвета при нажатии */
+    color: #cf6809;
+}
+
+.num {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s linear;  /* Плавное изменение цвета */
+}
+  .num:hover { /* псевдокласс,происходит изменение цвета при нажатии */
+    color: #cf6809;
+}
+  .phone-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+  .phone-holder {
+    display: flex;
+    align-items: center;
+}
+
+.dog-text {
+    color: #cf6809;
+    text-align: center;
+    margin-top: 50px;
+    font: 700 22px "Open Sans", sans-serif;
+}
+
+.dog-text1 {
+    color: #141414;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font: 700 22px "Open Sans", sans-serif;
+}
+
+.dog-img {
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.dog-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dog-photo p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.shapka,
+.shapka * {
+  box-sizing: border-box;
+}
+
+.shapka {
+  background: #141414;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  background-color: #141414;
+  width: 100%;
+  margin-left: calc(50% - 50vw);
+  height: 200px;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+.coperight{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+}
+.contact{
+  text-align: left;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+.inform{
+  text-align: left;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;  
+}
+
+.offer {
+    text-align: center;
+    background: url('img/vol-fon.png');
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 200px;
+    color: #fff;
+}
+
+.offer h1 {
+    font-size: 45px;
+}
+.offer p {
+    margin-top: 81px;
+    font-size: 20px;
+}
+
+#how {
+    text-align: center;
+    margin-top: 61px;
+}
+
+#how h2 {
+    color: #CF6809;
+    font-size: 28px;
+}
+
+#how p {
+    font-size: 22px;
+    color: #000;
+}
+
+  .steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+
+}
+
+.step p {
+    font-size: 12px !important;
+
+}
+
+.step h3 {
+    font-size: 16px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #CF6809;
+  margin-right: 20px;
+  z-index: 2;
+}
+
+.line {
+  position: absolute;
+  top: 20px;
+  left: 9px;
+  height: 228%;
+  width: 2px;
+  background-color: #ABABAB;
+}
+
+.content {
+    max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}

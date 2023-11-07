@@ -1,0 +1,430 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.button-1 a {
+  color: #fff;
+}
+.wrapper {
+  width: 1440px;
+  display: block;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.header_fon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -65px;
+  background-size: 100%;
+}
+.container {
+  margin: 0px 166px;
+}
+.header-line {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-item {
+  color:white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 25px;
+  transition: color 0.3s linear;  /* Плавное изменение цвета */
+}
+.nav-item:hover { /* псевдокласс,происходит изменение цвета при нажатии */
+  color: #cf6809;
+}
+.num {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s linear;  /* Плавное изменение цвета */
+}
+.num:hover { /* псевдокласс,происходит изменение цвета при нажатии */
+  color: #cf6809;
+}
+.phone-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+.phone-holder {
+  display: flex;
+  align-items: center;
+}
+.button {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 14px 18px;
+  font-weight: 500;
+  border: 2px solid #cf6809;
+  transition: color 0.3s linear;  /* Плавное изменение цвета */
+}
+.button:hover { /* псевдокласс,происходит изменение цвета при нажатии */
+  background-color: rgb(87, 58, 25);
+}
+.header {
+  /* Определяет положение элементов по оси z */
+	z-index: 1; 
+}
+
+.header-down {
+  position: relative; /* Становится родителем .header-title */
+  left: 38%;
+  transform: translate(-50%);
+}
+.header-title {
+  color: #cf6809;
+  font-size: 50px;
+  font-weight: 600;
+  display: flex;
+  height: 361px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-top: 110px;
+  margin-bottom: 12px;
+}
+.header-sup {
+  color: white;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+  margin: 20px 0;
+}
+.header-sup:after { /* Используем псевдокласс для полосок по бокам */
+  content: "";   /* Для линий оставим пустым */
+  height: 2px;
+  width: 61px;
+  background-color: white;
+}
+.header-sup:before { /* Используем псевдокласс для полосок по бокам */
+  content: "";   /* Для линий оставим пустым */
+  height: 2px;
+  width: 61px;
+  background-color: white;
+}
+
+.cards-holder {
+	position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  align-items: center;
+  margin-top: -50px;
+  z-index: 10;
+}
+.card {
+  box-shadow: 10px 10px 40px 20px #0000001A;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+.card-image { /* Карточка по центру */ 
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+.card-title { 
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.card-desc {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.card-desc span {
+  color: rgb(83, 83, 83);
+}
+
+.onas {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.onas-title  {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 54px;
+  font-weight: 400;
+  width: 444px;
+  text-align: center;
+  margin-top: 30px;
+}
+.onas-title span {
+  color: #cf6809;
+}
+.onas-desc {
+  color: rgb(83, 83, 83);
+  font-size: 16px;
+  width: 444px;
+  text-align: center;
+}
+.onas-number {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 444px;
+}
+.number-item {
+  margin-right: 30px;
+  text-align: center;
+  font-size: 28px;
+  color: #cf6809;
+}
+.number-item span {
+  display: block;
+  color: #000;
+}
+.onas-images {
+  position: relative;
+}
+.onas-holder {
+  display: flex;
+  justify-content: space-between;
+}
+.images-1 {
+  position: absolute;
+  z-index: 999;
+  top: 54px;
+  left: -550px;
+}
+.images-2 {
+  position: absolute;
+  z-index: 0;
+  top: 15px;
+  left: -390px;
+}
+.images-3 {
+  position: absolute;
+  z-index: 999;
+  top: 150px;
+  left: -220px;
+}
+
+.black-block {
+  padding: 8px 0;
+}
+
+.pets-fon,
+.pets-fon * {
+  box-sizing: border-box;
+
+}
+.free_pets {
+  margin-right: 20px;
+}
+.pets-fon {
+  background: #141414;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 540px;
+}
+
+.pets-text,
+.pets-text * {
+  box-sizing: border-box;
+}
+.pets-text {
+  color: #ffffff;
+  padding-top: 34px;
+  text-align: center;
+  font: 700 20px "Open Sans", sans-serif;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.pets-image-1,
+.pets-image-1 * {
+  box-sizing: border-box;
+}
+.pets-image {
+  width: 300px;
+  height: 360px;
+}
+
+.pets-name,
+.pets-name * {
+  box-sizing: border-box;
+}
+.pets-name {
+  color: #ffffff;
+  font: 400 16px "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.button-1 {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  margin-top: 28px;
+  padding: 14px 18px;
+  font-weight: 500;
+  border: 2px solid #cf6809;
+  position: relative;
+  transition: color 0.3s linear;  /* Плавное изменение цвета */
+}
+
+.button-1:hover { /* псевдокласс,происходит изменение цвета при нажатии */
+  background-color: rgb(87, 58, 25);
+}
+
+#foto, #foto2 { /* информация о здоровье собак */
+  position: relative;
+}
+.health{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: url(./img/health-fon.png) no-repeat;
+  background-size: 100%;
+  background-position-y: -80px;
+}
+
+
+.iframe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.iframe img {
+  width: 100%;
+  height: auto;
+}
+#footer {
+  background-color: #141414;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 200px;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+
+#block1 {
+  float: left;
+  margin-left: 20px;
+  width: 100px;
+  height: 28px;
+  display: inline;
+  background-color: transparent;
+  border:none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Menu {
+  width: 300px;
+  height: 185px;
+  text-align: center;
+  border: 3px solid #cf6809;
+  border-radius: 10px;
+  color: #a15a2a;
+  margin-top:115px;
+  margin-left: 1010px;
+  background: #fff;
+  font-weight: 400;
+}
+
+#zatemnenie {
+  background: rgba(37, 21, 15, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#zatemnenie:target {display: block;}
+.text_menu {
+  text-decoration: none;
+  color:rgb(248, 54, 54);
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif  ; 
+}
+
+.close2 {
+  display: inline-block;
+  border: none;
+  color: #cf6809;
+  margin-left: 270px;
+  margin-top: 0px;
+  text-decoration: none;
+
+  font-size: 14pt;
+  cursor: pointer;
+}
+
+.sub {
+  margin-top:-15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sup {
+  margin-top:-10px;
+}
+
+.sup span {
+  color: #000;
+}
+.coperight{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+}
+.contact{
+  text-align: left;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+.inform{
+  text-align: left;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;  
+}
+#col-md-3 {
+margin-top:-90px;
+margin-right: -900px;
+font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pets-item {
+  position: relative;
+}
+
+.pets-item .more-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
