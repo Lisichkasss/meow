@@ -1,0 +1,32 @@
+body {
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+.container {
+    width: 1200px;
+    margin: 80px auto;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #F1F1F1;
+    text-decoration: none;
+}
+.active {
+    padding-right: 50px;
+}
+.header_text{
+    font-size: 90px;
+}
+.block__title {
+    font-size: 160px;
+}
+.block__img {
+    width: 1200px;
+    height: 762px;
+}
