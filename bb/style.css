@@ -7,6 +7,7 @@ a {
 }
 .container {
   margin: 0 auto;
+  padding: 80px;
   width: 1200px;
 }
 li a {
@@ -15,6 +16,9 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+.main {
+  width: 2000px;
 }
 
 li a:hover {
@@ -34,8 +38,10 @@ li a:hover {
   width: 1200px;
   height: 762px;
 }
-.header {
-  margin-top: 74px;
+.block__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .header__nav {
   display: flex;
@@ -68,6 +74,7 @@ li a:hover {
   display: flex;
   align-items: center;
   gap: 9px;
+  margin-top: 109px;
 }
 .projects__section {
   display: flex;
@@ -93,4 +100,23 @@ li a:hover {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 330px;
+}
+.news__discription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__image {
+  margin-top: 137px;
+}
+.contact__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 330px;
+}
+
+.contact__info {
+  display: flex;
+  gap: 144px;
 }
