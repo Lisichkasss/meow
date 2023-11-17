@@ -1,3 +1,5 @@
+@media screen {
+}
 body {
   font-family: Helvetica Neue, Arial, sans-serif;
 }
@@ -115,8 +117,42 @@ li a:hover {
   justify-content: space-between;
   margin-top: 330px;
 }
-
 .contact__info {
   display: flex;
   gap: 144px;
+}
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e4e4;
+}
+.footer__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer__link {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__adress {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .block__title {
+    font-size: 50px;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 80px;
+    width: 1200px;
+  }
+}
+@media  and (max-width:375px) {
+  
 }
