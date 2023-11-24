@@ -1,11 +1,10 @@
 //Задание 1-2
 const myName = "Елизавета";
 const programmingLanguage = "JavaScript";
-let firstChar = str["JAVASCRIPT"];
-let lastChar = str[str.length-1];
 const courseCreatorName = "Чёботов Н.М";
 const reasonText = "Обучиться веб-дизайну";
 const numberOfMonth = "6 месяцев";
+
 let MyInfoText =
   "Всем привет! Меня зовут, " +
   myName +
@@ -21,7 +20,10 @@ let MyInfoText =
   numberOfMonth +
   ". Я уверена, что пройду данный курс до конца!";
 
-console.log(MyInfoText);
+let firstChar = MyInfoText[0];
+console.log(
+  MyInfoText.replaceAll(programmingLanguage, programmingLanguage.toUpperCase())
+);
 console.log(MyInfoText.length);
 console.log("Первый символ:", firstChar);
-console.log("Последний символ:", lastChar);
+console.log(MyInfoText[MyInfoText.length - 1]);

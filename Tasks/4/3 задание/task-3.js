@@ -1,4 +1,6 @@
 //Задание 3
 const userName = prompt("Как вас зовут?".toLowerCase());
-userName = $.trim(userName);
-alert("Вас зовут", userName);
+
+console.log(userName.toLowerCase());
+console.log(userName.trim());
+alert(`Вас зовут, ${userName}`);
